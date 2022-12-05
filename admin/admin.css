@@ -1,0 +1,81 @@
+body {
+  background-color: #3a6d80;
+}
+.add_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.add_form input {
+  border-bottom: 2px solid #b3b3b3;
+  line-height: 50px;
+  padding: 0 15px;
+}
+.add_form_desc {
+  flex-grow: 1;
+}
+.add_form_parent {
+  border-bottom: 2px solid #b3b3b3;
+  height: 52px;
+  padding: 0 15px;
+}
+.add_form_submit {
+  background-color: #b3b3b3;
+  color: white;
+  height: 50px;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.object {
+  padding-left: 20px;
+}
+.object.root {
+  padding-left: 0;
+}
+.object_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #b3b3b3;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+.object_name {
+  flex-grow: 1;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.object_description {
+  width: 100%;
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 0 10px 0;
+}
+.object_parent {
+  color: white;
+  font-weight: 600;
+}
+.object_parent option {
+  background-color: #b3b3b3;
+}
+.object_remove {
+  width: 30px;
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+  line-height: 50px;
+}

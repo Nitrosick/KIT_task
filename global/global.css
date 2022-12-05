@@ -1,0 +1,127 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Calibri', sans-serif;
+}
+main {
+  flex-grow: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+input,
+select {
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+input:focus,
+select:focus,
+input:active,
+select:active {
+  outline: none;
+}
+.header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.header_logo {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+.header_links {
+  display: flex;
+  gap: 20px;
+}
+.header_links_item {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+.content {
+  box-sizing: border-box;
+  background-color: white;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 2px 15px -3px black;
+}
+.auth {
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -145px;
+  height: 290px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  padding: 70px 30px;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0 2px 10px -5px black;
+  transition: all 0.5s ease-in-out;
+}
+.auth_close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  transform: scale(1, 0.8);
+  padding: 0 5px;
+}
+.auth_input {
+  height: 30px;
+  border-bottom: 2px solid #b3b3b3;
+}
+.auth_input::placeholder {
+  color: #b3b3b3;
+}
+.auth_login {
+  height: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.auth.closed {
+  right: -350px;
+}
+.info {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: -150px;
+  border-radius: 10px;
+  padding: 0 30px;
+  background-color: white;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+}
